@@ -248,9 +248,9 @@ class tlsh(object):
         Note that if both buf and hash parameters are provided on
         initialisation, buf will be used and hash will be ignored."""
 
-        self._buf_len = 0
-	self._final = False
-        self._tlsh = tlsh_wrapper.Tlsh()
+    	self._buf_len = 0
+    	self._final = False
+    	self._tlsh = tlsh_wrapper.Tlsh()
 
         if buf is not None:
             self.update(buf)
